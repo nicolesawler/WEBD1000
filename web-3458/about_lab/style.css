@@ -1,0 +1,54 @@
+body{
+    background-color: beige;
+    background-image: url("https://wallpaperset.com/w/full/d/a/4/462757.jpg");
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    /* hide white space around page edge */
+    padding:0;
+    margin:0;
+}
+
+
+header{
+    text-align: center;
+    background:white;
+    padding:15px;
+}
+h1{
+    padding:0;
+    margin:0;
+}
+h2{
+
+}
+blockquote{
+    color:darkred;
+}
+
+
+
+nav{
+    background-color: #ddd;
+    margin:25px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    padding:25px;
+}
+
+
+main{
+    background:white;
+    margin:100px;
+    /*opacity: .4;*/
+}
+
+
+
+
+footer{
+
+}
