@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("pattern2.jpg");
+            background-size: 20%;
+
+            /*background-color: antiquewhite;
+            background-image: url("bg4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height:4000px;*/
+        }
+        .master{
+            max-width:500px;
+            background-color: white;
+            margin:10px auto;
+            padding:20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        .s-one{content: url("goulash.jpg");} 
+        .s-two{content: url("gumbo.jpg");} 
+        .s-three{content: url("espresso.jpg");} 
+
+        [class*="s-"]{
+            border: 1px solid lightgray;
+            padding:7px;
+            background-color: white;
+            border-radius: 50px;
+            margin:15px;
+            width:200px;
+            height:200px;
+            object-fit: cover;
+            float:left;
+        }
+        h2{
+            color:white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding:15px;
+            background:lightgray;
+            border-radius: 7px;
+        }
+        p{
+            text-align: justify;
+        }
+        button{
+            padding:7px 25px;
+            font-weight: bold;/* 400 700 900 */
+            background-color: cadetblue;
+            border: 2px solid rgb(22, 140, 106);
+            border-radius: 10px;
+            display:block;
+            margin: 20px auto;
+            text-transform: uppercase;
+
+            filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+        }
+        button:hover{
+            background-color: lightgreen;
+            cursor:pointer;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .box:after{
+            content: "";
+            display: block;
+            clear:both;
+        }
+        /*p:first-letter{
+            font-size: 40px;
+            vertical-align: top;
+            line-height: .7;
+            background-color: gray;
+            padding:5px;
+            color:white;
+        }*/
+
+    </style>
+</head>
+<body>
+<div class="master">
+    <div class="box">
+        <h2>Goulash Recipe</h2>
+        <img class="s-one"/>
+        <button>Read More...</button>
+        <hr>
+    </div>
+    <h2>New Orleans Gumbo Recipe</h2>
+    <img class="s-two" />
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor nisi, facilisis vel nisi nec, pulvinar dapibus lectus. Duis pretium justo et nulla posuere pulvinar. Sed sit amet auctor lectus. Quisque semper feugiat purus ut tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ut tortor ut diam scelerisque vehicula et et ante. Quisque sit amet leo nisi. Curabitur ornare urna nec tortor ultrices auctor. Vivamus sit amet est posuere, malesuada ex nec, finibus ex. Nam eleifend est vel urna dapibus interdum. Curabitur rutrum egestas elit quis vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eu sapien sit amet nibh sollicitudin imperdiet in sit amet magna. Morbi tincidunt in arcu nec consectetur. Integer vitae neque ac lacus eleifend mattis et eu tortor. Sed ut bibendum enim, at vulputate mi.</p>
+    <button>Read More...</button>
+    <hr>
+    <h2>Espresso Martini Recipe</h2>
+    <img class="s-three"/>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor nisi, facilisis vel nisi nec, pulvinar dapibus lectus. Duis pretium justo et nulla posuere pulvinar. Sed sit amet auctor lectus. Quisque semper feugiat purus ut tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ut tortor ut diam scelerisque vehicula et et ante. Quisque sit amet leo nisi. Curabitur ornare urna nec tortor ultrices auctor. Vivamus sit amet est posuere, malesuada ex nec, finibus ex. Nam eleifend est vel urna dapibus interdum. Curabitur rutrum egestas elit quis vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eu sapien sit amet nibh sollicitudin imperdiet in sit amet magna. Morbi tincidunt in arcu nec consectetur. Integer vitae neque ac lacus eleifend mattis et eu tortor. Sed ut bibendum enim, at vulputate mi.</p>
+    <button>Read More...</button>
+    <hr>
+    <h2>Avocado Salmon Recipe</h2>
+    <img class="s-four" src="salmon.jfif" />  
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor nisi, facilisis vel nisi nec, pulvinar dapibus lectus. Duis pretium justo et nulla posuere pulvinar. Sed sit amet auctor lectus. Quisque semper feugiat purus ut tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque ut tortor ut diam scelerisque vehicula et et ante. Quisque sit amet leo nisi. Curabitur ornare urna nec tortor ultrices auctor. Vivamus sit amet est posuere, malesuada ex nec, finibus ex. Nam eleifend est vel urna dapibus interdum. Curabitur rutrum egestas elit quis vehicula. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin eu sapien sit amet nibh sollicitudin imperdiet in sit amet magna. Morbi tincidunt in arcu nec consectetur. Integer vitae neque ac lacus eleifend mattis et eu tortor. Sed ut bibendum enim, at vulputate mi.</p>
+    <a href="https://bing.com" ><button onclick="openBox()">Read More...</button></a>
+    <hr>
+</div>
+</body>
+</html>
