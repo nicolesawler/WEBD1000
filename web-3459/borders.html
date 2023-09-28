@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body{
+            /*
+            background-image:  url("backy.jpg") ;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+            height:100%;
+            */
+            /* 
+            background: yellow url("pattern.jpg") repeat;
+            */
+        }
+        img{
+            /*content: url("backy.jpg");*/
+            max-width:50%;
+            border: 1px solid grey;
+            padding:7px;
+            background-color:white;
+            border-radius: 10px;
+            border-radius:50%;
+        }
+        .img-one{content: url("sm.jpg");}
+        .img-two{content: url("backy.jpg");}
+        .img-three{content: url("pattern.jpg");}
+        
+        [class*="img-"] {
+            border: 10px solid red;
+        }
+
+        dialog{
+            border:5px solid red;
+        }
+    </style>
+</head>
+<body>
+    <img class="img-one" alt="a picture of sailor moon" title="Sailor Scouts!" />
+    <img class="img-two" alt="a picture of sailor moon" title="Sailor Scouts!" />
+    <img class="img-three second" alt="a picture of sailor moon" title="Sailor Scouts!" />
+<br><br><br><br><br><br><br>
+<dialog open id="myDialog">This is an open dialog window.</dialog>
+
+<br><br><br><br><br><br><br>
+    Close dialog
+
+    <button onclick="closeDialog()">Close dialog</button>
+    Show dialog
+    
+    <button onclick="showDialog()">Show dialog</button>
+    <script>
+        const dialog = document.getElementById("myDialog"); 
+        
+        function showDialog() { 
+          dialog.show(); 
+        } 
+        
+        function closeDialog() { 
+          dialog.close(); 
+        } 
+        </script>
+        </body>
+</html>
