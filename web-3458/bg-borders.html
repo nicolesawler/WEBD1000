@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url("pattern.jpg");
+            background-size: 20%;
+            /*
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            */
+        }
+        .master{
+            max-width:500px;
+            background-color: white;
+            margin: 10px auto;
+            padding:20px;
+            border-radius:10px;
+            border:1px solid black;
+        }
+        .s-one{content: url("goulash.jpg");}
+        .s-two{}
+        .s-three{}
+
+        [class*="s-"] {
+            border: 1px solid lightgrey;
+            padding:7px;
+            margin:15px;
+            background-color:white;
+            border-radius:10px;
+            width:200px;
+            height:200px;
+            object-fit: cover;
+            float:left; 
+        }
+        h2{
+            color:darkgray;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background: lightgray;
+            padding:15px;
+            border-radius: 7px;
+        }  
+        p{
+            text-align:justify;
+        } 
+    </style>
+</head>
+<body>
+    <div class="master">
+        <h2>Goulash Recipe</h2>
+        <img class="s-one"/>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula odio ut convallis rutrum. Donec dapibus turpis nisl, at blandit sem pretium ut. Aenean sagittis condimentum felis non sollicitudin. Sed imperdiet faucibus volutpat. Integer rutrum odio a ante iaculis egestas. Etiam bibendum et felis id aliquet. Etiam sapien ipsum, scelerisque dictum est in, dignissim dapibus libero. Morbi eu felis risus. Aenean congue augue ligula, auctor maximus elit consectetur in. Praesent sagittis dolor lorem, sodales tincidunt tortor hendrerit quis. Fusce eleifend sem et diam dictum luctus. Aliquam ut sodales mauris.</p>
+        <hr> 
+        <h2>Gumbo Recipe</h2>
+        <img class="s-two" src="gumbo.jpg" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula odio ut convallis rutrum. Donec dapibus turpis nisl, at blandit sem pretium ut. Aenean sagittis condimentum felis non sollicitudin. Sed imperdiet faucibus volutpat. Integer rutrum odio a ante iaculis egestas. Etiam bibendum et felis id aliquet. Etiam sapien ipsum, scelerisque dictum est in, dignissim dapibus libero. Morbi eu felis risus. Aenean congue augue ligula, auctor maximus elit consectetur in. Praesent sagittis dolor lorem, sodales tincidunt tortor hendrerit quis. Fusce eleifend sem et diam dictum luctus. Aliquam ut sodales mauris.</p>
+        <hr>
+        <h2>Espresso Martini Recipe</h2>
+        <img class="s-three" src="espresso.jpg" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula odio ut convallis rutrum. Donec dapibus turpis nisl, at blandit sem pretium ut. Aenean sagittis condimentum felis non sollicitudin. Sed imperdiet faucibus volutpat. Integer rutrum odio a ante iaculis egestas. Etiam bibendum et felis id aliquet. Etiam sapien ipsum, scelerisque dictum est in, dignissim dapibus libero. Morbi eu felis risus. Aenean congue augue ligula, auctor maximus elit consectetur in. Praesent sagittis dolor lorem, sodales tincidunt tortor hendrerit quis. Fusce eleifend sem et diam dictum luctus. Aliquam ut sodales mauris.</p>
+        <hr>
+        <h2>Salmon Salad Recipe</h2>
+        <img class="s-four" src="salmon.jfif" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula odio ut convallis rutrum. Donec dapibus turpis nisl, at blandit sem pretium ut. Aenean sagittis condimentum felis non sollicitudin. Sed imperdiet faucibus volutpat. Integer rutrum odio a ante iaculis egestas. Etiam bibendum et felis id aliquet. Etiam sapien ipsum, scelerisque dictum est in, dignissim dapibus libero. Morbi eu felis risus. Aenean congue augue ligula, auctor maximus elit consectetur in. Praesent sagittis dolor lorem, sodales tincidunt tortor hendrerit quis. Fusce eleifend sem et diam dictum luctus. Aliquam ut sodales mauris.</p>
+        <hr>
+    </div>
+</body>
+</html>
