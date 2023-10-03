@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="test-css.css" />
+    <style>
+:root {
+--color: #007bff;
+--textsize: 16px;
+} 
+
+body {
+
+background-color: var(--color); 
+
+font-size: var(--textsize);
+
+} 
+        ::selection {
+            background-color:pink;
+            --bg: darkred;
+            --primary-color: #0000FF;
+            --body-fonts: "Helvetica", "Arial", sans-serif;
+        }
+        
+        p {
+            color: var(--primary-color);
+            font-family: var(--body-fonts);
+            background-color: var(--bg);
+        }
+
+
+
+        div.main{
+            position:absolute;
+
+            background:#0000FF;
+            padding:50px;
+
+            top: 500px;
+            left: 300px;
+            bottom:40px;
+            right:300px;
+
+        }
+
+        .relative2 {
+            position: relative;
+            top: 10px;
+            left: 10px;
+
+
+
+            background-color: white;
+            width: 500px;
+            border: 5px solid purple;
+            }
+    </style>
+</head>
+<body>
+    <p>text text text</p>
+    <div class="main">
+        text text text
+        <div class="relative2">
+            text text text
+        </div>
+    </div>
+</body>
+</html>

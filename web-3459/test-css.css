@@ -1,1 +1,11 @@
-
+:root {
+    margin: 0;
+    padding: 0;
+    --primary-color: #0000FF;
+    --body-fonts: "Helvetica", "Arial", sans-serif;
+  }
+  
+  p {
+    color: var(--primary-color);
+    font-family: var(--body-fonts);
+  }
