@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .container {
+            display: flex;
+    
+                width: 80%;
+                margin:10px auto;
+                height: 100%;
+                background-color: #fff;
+                padding: 20px;
+        }
+        header{
+            background:white;
+            max-width:100%;
+            margin:10px auto;
+            padding:20px;
+        }
+
+        aside{
+            background:bisque;
+            margin:10px;
+            padding:20px;
+        }
+
+
+        @media only screen and (max-width: 480px) {
+            
+            body{
+                background-color:deeppink;
+            }
+            main, aside{
+                display:block;
+            }
+            .container {
+                display:block;
+            }
+            footer{
+                background:#fff;
+                font-weight:900;
+            }
+
+        }
+        @media only screen and (min-width: 481px) and (max-width: 998px) {
+            
+            body{
+                background-color: aqua;
+            }
+            main{
+  
+
+            }
+            p{
+                padding:20px;
+                display:block;
+                border-bottom:1px solid black;
+            }
+            footer{
+                background:#eee;
+                font-weight:600;
+            }
+
+        }
+        @media only screen and (min-width: 999px) {
+            
+            body{
+                background-color:coral;
+            }
+            main{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            footer{
+                background:#ddd;
+                font-weight:200;
+                padding:20px;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>Nicole's Hotel</header>
+    <div class="container">
+        <aside>
+            <h2>
+                Navigation
+            </h2>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+            <a href="#">Link</a><br>
+        </aside>
+        <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laboriosam molestias similique modi, cumque nesciunt quo, incidunt eveniet facere sit, consequatur officia pariatur. Minima aperiam a voluptates nostrum esse atque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laboriosam molestias similique modi, cumque nesciunt quo, incidunt eveniet facere sit, consequatur officia pariatur. Minima aperiam a voluptates nostrum esse atque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati laboriosam molestias similique modi, cumque nesciunt quo, incidunt eveniet facere sit, consequatur officia pariatur. Minima aperiam a voluptates nostrum esse atque.
+        </p>
+        </main>
+    </div>
+    <footer>
+        &copy; Copyright 2023 | Nicole Sawler
+    </footer>
+</body>
+</html>
