@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: lightgray;
+        }
+
+        @media only screen and (max-width: 480px) {
+            
+            body{
+                background-color: red;
+            }
+     
+
+        }
+
+        @media only screen and (min-width: 481px) and (max-width: 799px) {
+            
+            body{
+                background-color: blue;
+            }
+
+
+        }
+
+        @media only screen and (min-width: 800px) {
+            
+            body{
+                background-color: green;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Basic Webpage!</h1>
+        <p>This is a simple HTML webpage.</p>
+        
+        <h2>Here's some additional content:</h2>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <picture>
+            <source media="(min-width:800px)"  srcset="backy.jpg">
+            <source media="(min-width:481px)"  srcset="bg.jpg">
+            <img src="sm.jpg" alt="Flowers" style="width:auto;">
+          </picture>
+
+    </div>
+</body>
+</html>
