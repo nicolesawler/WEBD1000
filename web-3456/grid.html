@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding:0;
+        }
+        div{
+            border:1px solid deeppink;
+            /*display:inline-block;
+            float:left;
+            box-sizing: border-box;
+            margin:0;
+            padding:0;*/
+        }
+
+        .row{
+            width:100%;
+            display:block;
+            border:0;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+        
+        [class*="col-"]{
+            padding:10px;
+            float: left;
+        }
+
+        .col-1{width:8.33%}
+        .col-2{width:16.66%}
+        .col-3{width:25%}
+        .col-4{width:33.33%}
+        .col-5{width:41.66%}
+        .col-6{width:50%}
+        .col-7{width:58.33%}
+        .col-8{width:66.66%}
+        .col-9{width:75%}
+        .col-10{width:83.33%} 
+        .col-11{width:91.66%}
+        .col-12{width:100%}
+
+        .container{
+            width: 80%;
+            background-color: antiquewhite;
+            margin:0 auto;
+        }
+
+        img{max-width:100px;display:block;margin:10px auto;}
+        
+        .sparkle{
+            background-color: azure;
+            margin:0px;
+            padding:25px;
+        }
+        .col-4{
+            border:0;
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <h2>My First Website!</h2>
+    <hr>
+
+    <div class="row">
+        <div class="col-4 sparkle">
+            <img src="images/logo.png" />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda et, dicta debitis voluptatibus libero eos cumque quis molestiae dolorum dolor saepe iste doloribus laboriosam voluptatem exercitationem eaque quibusdam quia! Dolores!
+        </div>
+        <div class="col-4 sparkle">
+            <img src="images/logo.png" />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda et, dicta debitis voluptatibus libero eos cumque quis molestiae dolorum dolor saepe iste doloribus laboriosam voluptatem exercitationem eaque quibusdam quia! Dolores!
+        </div>
+        <div class="col-4 sparkle">
+            <img src="images/logo.png" />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda et, dicta debitis voluptatibus libero eos cumque quis molestiae dolorum dolor saepe iste doloribus laboriosam voluptatem exercitationem eaque quibusdam quia! Dolores!
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="row">
+    </div>
+
+    <div class="row">
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+        <div class="col-1">col-1</div>
+    </div>
+
+    <div class="row">     
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+    </div>
+
+
+<div class="row">
+    <div class="col-4">
+        This is a column for col-41
+    </div>
+    <div class="col-4">
+        This is a column for col-41
+    </div>    
+    <div class="col-4">
+        This is a column for col-41
+    </div>
+</div>
+
+<!--
+<div class="row">
+    <div class="col-5">col-5</div>
+    <div class="col-5">col-5</div>
+</div>
+-->
+
+
+<div class="row">
+    <div class="col-6">col-6</div>
+    <div class="col-6">col-6</div>
+</div>
+
+<div class="col-7">This is a column for col-7</div>
+
+<div class="row">
+    <div class="col-8">lore This is a column for col-8
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa est ad aliquid dolorum repudiandae corrupti maxime assumenda ipsa distinctio. A necessitatibus eum eius itaque voluptas fugit. Quas veritatis doloremque a!
+    </div>
+    <div class="col-4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum aperiam aliquid? Accusamus, quam enim maxime eveniet aut esse totam necessitatibus ab facilis quibusdam natus hic tenetur voluptatibus eum est!
+        This is a column for col-4</div>
+</div>
+
+
+<div class="row">
+    <div class="col-9">This is a column for col-9</div>
+    <div class="col-3">col-3</div>
+</div>
+<div class="row"></div>
+<div class="row"></div>
+<div class="col-9">This is a column for col-9</div>
+<div class="col-10">This is a column for col-10</div>
+<div class="col-11">This is a column for col-11</div>
+<div class="col-12">This is a column for col-12</div>
+ 
+
+</body>
+</html>
