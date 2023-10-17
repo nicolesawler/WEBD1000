@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin:0;
+        }
+        p { margin-left: 1em }
+        h1 { font-size: 3em; margin-left: 0.333em }
+
+        div{
+            border:2px solid black;
+        }
+        [class*="col-"]{
+            display:inline-flex;
+            margin:0;
+            padding:0;
+            width:100%;
+        }
+        .row{
+            display:block;
+            margin:0;
+            padding:0;
+            border-color:lightgreen;
+        }
+
+
+        .col-1{width: 8.33%}
+        .col-2{width: 16.66%}
+        .col-3{width: 25%}
+        .col-4{width: 33.33%}
+        .col-5{width: 41.66%}
+        .col-6{width: 50%}
+        .col-7{width: 58.33%}
+        .col-8{width: 66.66%}
+        .col-9{width: 75%}
+        .col-10{width: 83.33%}
+        .col-11{width: 91.66%}
+        .col-12{width: 100%}
+
+        .brighttext{color:deeppink}
+
+ 
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Hello, World!</h1>
+        <p>Hi!</p>
+    </div>
+
+    <div class="row">
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+        <div class="col-1">COLUMN 1</div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">This uses class .col-2</div>
+    </div>
+
+    <div class="row">
+        <div class="col-3">This uses class .col-3</div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">This uses class .col-4</div>
+    </div>
+
+    <div class="row">
+        <div class="col-5">This uses class .col-5</div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 brighttext">This uses class .col-6</div>
+    </div>
+
+    
+    <div class="row">
+        <div class="col-7">This uses class .col-7</div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">This uses class .col-8</div>
+    </div>
+
+    <div class="row">
+        <div class="col-9">This uses class .col-9</div>
+    </div>
+
+    <div class="row">
+        <div class="col-10">This uses class .col-10</div>
+    </div>
+
+    <div class="row">
+        <div class="col-11">This uses class .col-11</div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">This uses class .col-12</div>
+    </div>
+
+    
+</body>
+</html>
