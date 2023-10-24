@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="stylesheetcss.css" >-->
+    <style>
+        .box1{
+            background-color: darkmagenta;
+            color:white;
+
+            width: 160px;
+            height: 120px;
+
+            position: absolute;
+
+            top:149px;
+            bottom:;
+            left:295px;
+            right:;
+
+            border-radius:20px;
+
+            overflow:auto;
+
+        }
+
+        .box2{
+            background-color: red;
+            color:white;
+
+            width: 120px;
+            height: 120px;
+
+            position: absolute;
+
+            top:155px;
+            bottom:;
+            left:480px;
+            right:;
+
+            border-radius:50%;
+
+        }
+        .box2:hover{
+            cursor:pointer;
+            background-color: darkcyan;
+        }
+
+        .box3{
+            background-color: burlywood;
+
+            width: 100px;
+            height: 100px;
+
+            position: absolute;
+
+            top:317px;
+            bottom:;
+            left:490px;
+            right:;
+
+            transition: transform 0.5s; /* Adding a smooth transition for better visualization */
+        }
+        .box3:hover {
+            transform: rotate(45deg) scale(1.2);
+        }
+
+
+
+        .box2 h1, .box2 h6{
+            text-align: center;
+        }
+
+        small{
+            background-color: darkblue;
+            padding:10px;
+
+
+            position: relative;
+            
+            top:-25px;
+            bottom:;
+            left:45px;
+            right:;
+        }
+    </style>
+</head>
+<body>
+    <img src="whiteboard.jpg">
+
+    <div class="box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit omnis aliquam repellat commodi cum consequuntur modi perferendis itaque? Magni harum natus doloremque libero vero ipsum porro doloribus pariatur, omnis earum!</p>
+    </div>
+
+    <div class="box2">
+        <small>
+            28
+        </small>
+        <h1>
+            Ni
+        </h1>
+        <h6>
+            Nickel
+        </h6>
+    </div>
+
+    <div class="box3"></div>
+
+</body>
+</html>
