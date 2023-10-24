@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <style>
+        .box1{
+            width:150px;
+            height:144px;
+            background-color: aqua;
+            position:absolute;
+
+            top:295px;
+            bottom:;
+            left:63px;
+            right:;
+        }
+        /* position absolute on the page anywhere */
+        .box2{
+            width:150px;
+            height:144px;
+            background-color: pink;
+            position:absolute;
+            /* coordinates */
+            top:295px;
+            bottom:;
+            left:216px;
+            right:;
+            overflow: auto; /* scrollbar */
+        }
+        .box2:hover{
+            cursor: pointer;
+            background-color: deeppink;
+        }
+        /* relative position with offset by -15px */
+        small{
+            position:relative;
+            padding:10px;
+            border-radius:50%;
+            top:-15px;
+            left:-15px;
+            background-color: red;
+        }
+        /* My First Animation */
+        .tag{
+            position:absolute;
+            top:150px;
+            left:300px;
+            bottom:;
+            right: ;
+
+            background-color: red;
+            opacity:.6;
+            border-radius: 20px;
+            padding: 10px 25px;
+            transition: transform 0.5s; /* Adding a smooth transition for better visualization */
+        }
+
+        .tag:hover {
+            transform: rotate(45deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <img src="present.jpg" />
+
+    <div class="box1">
+        <small>28</small>
+        <h1>Ni</h1>
+        <p>Nickel</p>
+    </div>
+
+    <div class="box2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quis aliquid sint. Nostrum, perferendis rerum mollitia itaque impedit numquam beatae, recusandae alias amet voluptate nisi corporis provident ab et assumenda!</p>
+    </div>
+
+    <div class="tag">
+        <h2>
+            To: My Love
+            <br>
+            From: Nicole
+        </h2>
+    </div>
+    
+</body>
+</html>
