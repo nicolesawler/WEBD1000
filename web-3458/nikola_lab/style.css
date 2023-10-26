@@ -1,0 +1,160 @@
+.responsive-img{
+    max-width:100%;
+    margin:5px auto;
+}
+body{
+    margin:0;
+    padding:0;
+    background-image: url("background.jpg");
+    background-size: 50%;
+    background-position: bottom right;
+    background-repeat:no-repeat;
+}
+blockquote{
+    padding:25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-color: purple!important;
+    background-color: white;
+}
+.main{
+    background-color: purple;
+    margin:0;
+    padding:20px;
+    color:white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 40px;
+}
+.date-event{
+    color:#26a69a;
+}
+.description{
+    color:#26a69a;
+}
+li{
+    list-style: none;
+}
+.collapsible-body{
+  background-color: #eee;
+  padding:40px;
+  max-width:100%;
+}
+
+.msg-event{
+    text-align: justify;
+    text-align-last: center;
+}
+.timeline{
+    text-align: center;
+    color:purple;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    border-top:5px solid #eee;
+    border-bottom:5px solid #eee;
+    padding: 10px;
+
+}
+.collapsible{
+    margin: 10px auto;
+    max-width:100%;
+    padding:15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+footer{
+    color:purple;
+    padding:30px;
+    margin:0;
+    width:100%;
+}
+a{
+    color:black;
+}
+
+
+
+
+
+
+
+
+  .title {
+    padding-top : 3%;
+  }
+  .subtitle {
+    margin: -15px 0px 35px 0px;
+  }
+  
+  .quote {
+    font-weight: bold;
+    font-size: medium;
+    margin: 35px 0px 15px 0px;
+  }
+  
+  .source-quote {
+    font-size: small;
+  }
+  
+  .timeline,
+  .fun-facts {
+    margin: 80px 0px 50px 0px;
+    font-size: xx-large;
+  }
+  
+  .title-event {
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .date-event {
+    font-size: x-large;
+    padding: 20px 20px 0px 20px;
+  }
+  
+  .description {
+    margin: -5px 0px 20px 0px;
+    font-weight: bold;
+  }
+  
+
+  .link {
+    width: 100%;
+    margin: 0px 0px 25px 0px;
+  }
+  
+  blockquote {
+    border-left: 5px solid #26a69a;
+  }
+  
+
+  
+  .world-history-project,
+  .ovelny,
+  .share {
+    font-weight: bold;
+  }
+  
+       
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width:680px){
+
+    .main{
+        background-color: purple;
+        margin:0;
+        padding:20px;
+        color:white;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: left;
+        font-size: 20px;
+    }
+
+}
