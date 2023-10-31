@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Fonts in CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+        
+        @font-face {
+            font-family: "Xena";
+            src: url("fonts/Xena.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "Old English";
+            src: url("fonts/EngraversOldEnglishNormal.ttf") format("truetype");
+        }  
+        @font-face {
+            font-family: "Oxtail";
+            src: url("fonts/oxtail/oxtailmedium-webfont.svg") format("svg"),
+                url("fonts/oxtail/oxtailmedium-webfont.eot") format("embedded-opentype"),
+                url("fonts/oxtail/oxtailmedium-webfont.ttf") format("truetype"),
+                url("fonts/oxtail/oxtailmedium-webfont.woff") format("woff");
+            }
+        @font-face {
+            font-family: "Oxtail Bold";
+            src: url("fonts/oxtail/oxtailbold-webfont.svg") format("svg"),
+                url("fonts/oxtail/oxtailbold-webfont.eot") format("embedded-opentype"),
+                url("fonts/oxtail/oxtailbold-webfont.ttf") format("truetype"),
+                url("fonts/oxtail/oxtailbold-webfont.woff") format("woff");
+        }   
+        @font-face {
+            font-family: "Oxtail Black";
+            src: url("fonts/oxtail/oxtailblack-webfont.svg") format("svg"),
+                url("fonts/oxtail/oxtailblack-webfont.eot") format("embedded-opentype"),
+                url("fonts/oxtail/oxtailblack-webfont.ttf") format("truetype"),
+                url("fonts/oxtail/oxtailblack-webfont.woff") format("woff");
+        }        
+        body{
+            font-family: "Old English";
+            font-size: 31px;
+        }
+        p{
+            font-family: "Xena";
+            font-size: 24px;  
+        }
+        .pink{
+            font-family: "Oxtail";
+            font-size: 24px; 
+        }
+        .blue{
+            font-family: "Oxtail Bold";
+            font-size: 24px; 
+        }
+        .green{
+            font-family: "Oxtail Black";
+            font-size: 24px; 
+        }
+        h1{
+            font-family: "Agbalumo";
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my Website</h1>
+    <h2>Hello, I'm Nicole</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem possimus saepe, asperiores aspernatur ratione officiis soluta accusamus rem nesciunt cumque nemo vitae quibusdam suscipit quam eos officia error unde tenetur!</p>
+    <button class="pink">Favourite Food</button>    
+    <button class="blue">Favourite Music</button>    
+    <button class="green">Favourite Sport</button>    
+</body>
+</html>
