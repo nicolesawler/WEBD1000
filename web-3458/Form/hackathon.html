@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Form</title>
+    <link href="hackstyles.css" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <h1>Welcome to my Hackathon!</h1>
+
+        <label for="NameBox">Your Name:</label><br>
+        <input type="text" placeholder="Enter your name..." /><br>
+        <br>
+
+        <label>Your Email:</label><br>
+        <input type="email" required><br>
+        <br>
+
+        <label>Password:</label><br>
+        <small>Not case sensitive (A-Z and 0-9) Min 8 characters and max 16 characters</small><br>
+        <input type="password" pattern="[A-Za-z0-9]{8,16}" required /><br>
+        <br>
+
+        <label>Remember your password?</label><br>
+        <input type="checkbox" value="yes"><br>
+        <br>
+
+        <label>Choose a day to attend the hackathon:</label><br>
+        <input type="radio" name="groupdays" value="friday" /> Friday<br>
+        <input type="radio" name="groupdays" value="saturday" /> Saturday<br>
+        <input type="radio" name="groupdays" value="sunday" /> Sunday<br>
+        <br>
+
+        <label>Choose a calendar date and time to start?</label><br>
+        <input type="datetime-local"><br>
+        <br>
+
+        <label>Add a profile picture:</label><br>
+        <input type="file"/><br>
+        <br>
+
+        <button type="submit">Submit My Form!</button>
+    </form>
+</body>
+</html>
