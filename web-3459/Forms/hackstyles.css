@@ -17,7 +17,10 @@ label{
     display:block;
     color:darkgreen;
 }
-input{
+input[type=text], 
+input[type=email],
+input[type=password]
+{
     display: block;
     padding:20px;
     border: 1px solid ghostwhite;
@@ -43,4 +46,24 @@ h2{
 }
 small{
     color:deeppink;
+}
+
+@media screen and (max-width:680px){
+
+    h1{
+        background-color: blueviolet;
+        color:blue;
+    }
+    h2{
+        color:orangered;
+    }
+    small{
+        color:purple;
+    }
+    input[type=checkbox]{
+        padding:20px;
+        transform: scale(2);
+    }
+
+
 }
