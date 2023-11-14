@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed Media</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        .container{
+            max-width: 70%;
+            padding:25px;
+            background:lightgoldenrodyellow;
+            border:1px solid yellow;
+            margin:0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my Media page</h1>
+
+        <small>This is my Nutcracker Dance!</small><br><br>
+        <audio controls> <!--autoplay-->
+            <source src="sugarplum.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <br><br>
+        <hr>
+        <br><br>
+        <h2>Embed a video with controls</h2>
+        <!--<video width="900" height="340" >
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>-->
+
+          <div style="text-align:center"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <video id="video1" width="420">
+              <source src="video.mp4" type="video/mp4">
+              Your browser does not support HTML video.
+            </video>
+          </div> 
+          
+          <script> 
+          var myVideo = document.getElementById("video1"); 
+          
+          function playPause() { 
+            if (myVideo.paused) 
+              myVideo.play(); 
+            else 
+              myVideo.pause(); 
+          } 
+          
+          function makeBig() { 
+              myVideo.width = 560; 
+          } 
+          
+          function makeSmall() { 
+              myVideo.width = 320; 
+          } 
+          
+          function makeNormal() { 
+              myVideo.width = 420; 
+          } 
+          </script> 
+
+
+<br><br>
+<hr>
+<br><br>
+<h2>Embed code of any kind (pre will format the code correctly))</h2>
+<pre>
+    <code>
+          function playPause() { 
+                if (myVideo.paused) 
+                    myVideo.play(); 
+                else 
+                    myVideo.pause(); 
+          } 
+    </code>
+</pre>
+
+
+<br><br>
+<hr>
+<br><br>
+
+
+<h2>Embed anything with an iFrame (Youtube, maps, websites etc.)</h2>
+
+<iframe id="inlineFrameExample" title="Inline Frame Example"
+  width="500"
+  height="400"
+  src="https://example.org">
+</iframe>
+
+<hr>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zIV4poUZAQo?si=b3Xx5v8B-jy7Q6Pj&amp;controls=0&amp;start=60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<hr>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2837.46936279361!2d-63.61600312319628!3d44.669192071072004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b67e381a2d007af%3A0x572f961618021aef!2sNSCC%20-%20Institute%20of%20Technology%20Campus!5e0!3m2!1sen!2sca!4v1699985613624!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+
+<!--
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+    
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+    }
+    
+    .content {
+      position: fixed;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      padding: 20px;
+    }
+    
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <iframe id="myVideo" src="https://www.youtube.com/embed/y6120QOlsfU?si=wiJV7YdqMyoYe6E4&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <div class="content">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+      <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div>
+    
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    -->
+
+    </div>
+</body>
+</html>
