@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embeddding Media</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="stylescss.css" >
+
+
+    <style>
+        div{
+            background-color: purple;
+            border:1px solid black;
+            padding:30px;
+            margin:10px auto;
+            width:500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>For this we embed Audio, Video and Youtube and may some code</h1>
+
+    <!--
+<iframe id="inlineFrameExample" title="Inline Frame Example"
+  width="500"
+  height="400"
+  src="page2.html">
+</iframe>
+-->
+<div>
+<h2>This is my favourite song!</h2>
+<audio controls>
+    <source src="sugarplum.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+    </audio>
+</div>
+
+<div>
+    <h2>This is my favourite movie!</h2>
+    <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+    </div>
+    
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zIV4poUZAQo?si=gWYQx6szXY_Xr2HU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</body>
+</html>
