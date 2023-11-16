@@ -1,0 +1,69 @@
+/* Reset some default styles to provide a clean slate */
+body, h1, h2, p, iframe, audio {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Apply styles to the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the page container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px #888888;
+}
+
+/* Style the columns and rows */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Style the embedded video */
+iframe {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Style the audio player */
+audio {
+    width: 100%;
+}
+
+/* Style the link to the Royal Opera House website */
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .col {
+        flex: 1 100%;
+    }
+}
