@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tables</title>
+    <style>
+        table{
+            width:100%;
+            border-collapse: collapse;
+            Border:1px solid grey;
+        }
+        thead{
+            background-color: aliceblue;
+        }
+        tfoot{
+            background-color: aliceblue;
+        }
+        tbody{
+
+        }
+        th{
+            padding:25px;
+        }
+        tr:nth-child(even){
+            background-color: azure;
+
+        }
+        td{
+            padding:10px;
+            border: 1px solid grey;
+        }
+        td:nth-child(3){
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Company name</th>
+                <th>Company Address</th>
+                <th>Profit p/yr</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Company Name would go</td>
+                <td>Company address would go</td>
+                <td>$1,000,000</td>
+            </tr>
+            <tr>
+                <td>Adidas</td>
+                <td>California</td>
+                <td>$12,000,000</td>
+            </tr>
+            <tr>
+                <td>Nike</td>
+                <td>Seattle</td>
+                <td>$24,000,000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row" colspan="3">This information was gathered from Stats Canada</th>
+            </tr>
+            <tr>
+                <td colspan="3">&copy; Nicole Sawler</td>
+            </tr>
+        </tfoot>
+
+    </table>
+    
+</body>
+</html>
